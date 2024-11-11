@@ -1,0 +1,146 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Angel Velazquez}}\\
+	21velazquezang@gmail.com $\cdot$ 442-456-4161 $\cdot$ https://www.linkedin.com/in/angel-velazquez-35998729a/\\
+\end{center}
+
+%==== Skills ====%
+\header{Skills}
+\begin{tabular}{ l l }
+	 Agile Workflow, Azure AI, C, C++, Confluence, Flutter, Github, Jira, Python, React, RESTful API\textquotesingle{}s, SQL \\
+\end{tabular}
+\vspace{0mm}
+
+%==== Experience ====%
+\header{Technical Experience}
+\vspace{1mm}
+
+\textbf{Paychex} \hfill Remote\\
+\textit{Software Engineer Intern} \hfill September 2024 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Designed and developed an AI-powered chatbot to streamline data navigation for Paychex developers by utilizing React for frontend development and integrating Jira and REST APIs for dynamic data handling with Azure AI Search.
+	\item Spearheaded the integration of RESTful APIs with seamless Jira workflows, which automated the team’s ability to access and manage project data effectively.
+	\item Guided team members in best practices for React development, API integration, and agile methodologies, ensuring high-quality code and fostering a collaborative and productive work environment.
+	\item Collaborated on the architectural design and development of a user-friendly interface.
+\end{itemize}
+\textbf{California Department of Corrections and Rehabilitation} \hfill Imperial, CA\\
+\textit{CDCR IT Assistant} \hfill August 2024 - September 2024\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Increased team productivity by 25\% by deliverering comprehensive IT support for an enterprise team at a CDCR prison, including system configuration, network maintenance, and user support, ensuring seamless daily operations and enhanced system reliability.
+	\item Took initiative of system configuration, troubleshooting, and ticket management.
+\end{itemize}
+\textbf{Imperial Irrigation District} \hfill Imperial, CA\\
+\textit{SCADA Engineer Intern} \hfill Summer 2022 - Summer 2023\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Managed multiple project timelines and coordinated between departments to ensure timely updates and upgrades of SCADA components, demonstrating strong organizational and leadership skills.
+	\item Provided technical support and conducted training sessions for new interns on SCADA operation and maintenance, improving team skills and knowledge base.
+	\item Enhanced substation SCADA system efficiency by 10\% by designing and implementing a sorting algorithm that optimized data input processing, resulting in faster decision-making and system responsiveness.
+ %==== \item Created and regularly updated As-Built AutoCAD drawings to reflect current specifications for various SEL devices, including ICON and RTACs, ensuring accuracy and compliance with engineering standards. ====%
+
+	\end{itemize}
+
+%==== Leadership Experience ====%
+\header{Leadership Experience}
+\vspace{1mm}
+
+\textbf{Chick-fil-A} \hfill Phoenix, AZ\\
+\textit{Back-of-house Shift Leader} \hfill October 2023 - May 2024\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Demonstrated exceptional time management, consistently prioritizing tasks to meet tight deadlines and customer load, ensuring continuous product availability.
+	\item Took initiative to support team members, assisting with training and providing guidance to ensure all employees were aligned with restaurant goals and operational standards.
+	\item Contributed to overall team success, stepping in to fill gaps as needed, whether by getting on fry station, hopping on machines, or handling special customer requests, always with a focus on teamwork.
+ 
+\end{itemize}
+
+%==== Projects ====%
+\header{Projects}
+{\textbf{Out There Social Club}} {\sl Flutter, WordPress, SQL} \hfill https://github.com/2024-Arizona-Opportunity-Hack/Hackathon-Queens-OutThereSocialClubat-OutThereSocialClub-ASUWebsiteandMembershipSystem\\
+Developed a cross-platform mobile application with a team using Flutter for the frontend and WordPress for the backend. The app provided a responsive and user-friendly interface, seamlessly integrating with WordPress for dynamic content management. I worked closely with the chief officers to gather requirements, ensuring the app aligned with business objectives while offering features like user authentication, real-time content updates, and smooth in-app navigation to enhance the overall user experience.\\
+\vspace*{2mm}
+
+%==== Education ====%
+\header{Education}
+\textbf{Grand Canyon University}\hfill Phoenix, AZ\\
+BS Computer Science \hfill Sep 2021 - May 2025\\
+\vspace{2mm}
+
+
+\ 
+\end{document}
